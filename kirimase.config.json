@@ -10,8 +10,8 @@
   "analytics": true,
   "rootPath": "",
   "componentLib": "shadcn-ui",
-  "driver": "pg",
-  "provider": "postgresjs",
+  "driver": "libsql",
+  "provider": "turso",
   "orm": "drizzle",
   "auth": null
 }

@@ -62,9 +62,6 @@ importers:
       next-themes:
         specifier: ^0.3.0
         version: 0.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      postgres:
-        specifier: ^3.4.4
-        version: 3.4.5
       react:
         specifier: ^18
         version: 18.3.1
@@ -117,9 +114,6 @@ importers:
       eslint-config-next:
         specifier: 14.2.4
         version: 14.2.4(eslint@8.57.1)(typescript@5.8.2)
-      pg:
-        specifier: ^8.12.0
-        version: 8.14.1
       postcss:
         specifier: ^8
         version: 8.5.3
@@ -5989,15 +5983,19 @@ snapshots:
   pg-cloudflare@1.1.1:
     optional: true
 
-  pg-connection-string@2.7.0: {}
+  pg-connection-string@2.7.0:
+    optional: true
 
-  pg-int8@1.0.1: {}
+  pg-int8@1.0.1:
+    optional: true
 
   pg-pool@3.8.0(pg@8.14.1):
     dependencies:
       pg: 8.14.1
+    optional: true
 
-  pg-protocol@1.8.0: {}
+  pg-protocol@1.8.0:
+    optional: true
 
   pg-types@2.2.0:
     dependencies:
@@ -6006,6 +6004,7 @@ snapshots:
       postgres-bytea: 1.0.0
       postgres-date: 1.0.7
       postgres-interval: 1.2.0
+    optional: true
 
   pg@8.14.1:
     dependencies:
@@ -6016,10 +6015,12 @@ snapshots:
       pgpass: 1.0.5
     optionalDependencies:
       pg-cloudflare: 1.1.1
+    optional: true
 
   pgpass@1.0.5:
     dependencies:
       split2: 4.2.0
+    optional: true
 
   picocolors@1.1.1: {}
 
@@ -6076,17 +6077,22 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postgres-array@2.0.0: {}
+  postgres-array@2.0.0:
+    optional: true
 
-  postgres-bytea@1.0.0: {}
+  postgres-bytea@1.0.0:
+    optional: true
 
-  postgres-date@1.0.7: {}
+  postgres-date@1.0.7:
+    optional: true
 
   postgres-interval@1.2.0:
     dependencies:
       xtend: 4.0.2
+    optional: true
 
-  postgres@3.4.5: {}
+  postgres@3.4.5:
+    optional: true
 
   prelude-ls@1.2.1: {}
 
@@ -6378,7 +6384,8 @@ snapshots:
 
   space-separated-tokens@2.0.2: {}
 
-  split2@4.2.0: {}
+  split2@4.2.0:
+    optional: true
 
   stable-hash@0.0.5: {}
 
@@ -6770,7 +6777,8 @@ snapshots:
 
   ws@8.18.1: {}
 
-  xtend@4.0.2: {}
+  xtend@4.0.2:
+    optional: true
 
   yaml@2.7.0: {}
 
