@@ -1,4 +1,4 @@
-import { createResource } from "@/lib/actions/resources";
+import { listAllResources } from "@/lib/actions/resources";
 import { findRelevantContent } from "@/lib/ai/embedding";
 import { google } from "@/lib/ai/models";
 import { streamText, tool } from "ai";
@@ -38,6 +38,11 @@ When answering questions:
           question: z.string().describe("the users question"),
         }),
         execute: async ({ question }) => findRelevantContent(question),
+      }),
+      listResources: tool({
+        description: `list all resources in your knowledge base.`,
+        parameters: z.object({}),
+        execute: async () => listAllResources(),
       }),
       getTimeAndDate: tool({
         description: `get the current time and date.`,
