@@ -29,7 +29,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.41.0",
-    "drizzle-zod": "^0.5.1",
+    "drizzle-zod": "^0.7.0",
     "highlight.js": "^11.11.1",
     "lucide-react": "^0.396.0",
     "nanoid": "^5.0.7",
