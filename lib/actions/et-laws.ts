@@ -12,7 +12,7 @@ import { google } from "../ai/models";
 export async function processLawText(fileUrl: string) {
   try {
     const result = await generateObject<EtLawsChunkSchema>({
-      model: google.chat("gemini-2.5-pro-exp-03-25", {
+      model: google.chat("gemini-2.5-pro", {
         useSearchGrounding: false,
         structuredOutputs: false,
       }),
